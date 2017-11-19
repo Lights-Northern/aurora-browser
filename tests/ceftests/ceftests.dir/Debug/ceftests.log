@@ -1,0 +1,21 @@
+﻿生成启动时间为 2017\12\19 星期二 19:04:24。
+     1>项目“C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\ceftests.vcxproj”在节点 4 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32 /Zi /nologo /W4 /WX /MP /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D __STDC_CONSTANT_MACROS /D __STDC_FORMAT_MACROS /D _WIN32 /D UNICODE /D _UNICODE /D WINVER=0x0601 /D _WIN32_WINNT=0x601 /D NOMINMAX /D WIN32_LEAN_AND_MEAN /D _HAS_EXCEPTIONS=0 /D CEF_USE_ATL /D UNIT_TEST /D "CMAKE_INTDIR=\"Debug\"" /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /GR- /Fo"ceftests.dir\Debug\\" /Fd"ceftests.dir\Debug\vc120.pdb" /Gd /TP /wd4100 /wd4127 /wd4244 /wd4481 /wd4512 /wd4701 /wd4702 /wd4996 /analyze- /errorReport:prompt C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\navigation_unittest.cc C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\os_rendering_unittest.cc C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\v8_unittest.cc
+         navigation_unittest.cc
+         os_rendering_unittest.cc
+         v8_unittest.cc
+     1>C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\navigation_unittest.cc(259): error C2220: 警告被视为错误 - 没有生成“object”文件
+     1>C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\navigation_unittest.cc(259): warning C4351: 新增行为:  默认情况下初始化数组“`anonymous-namespace'::NavigationEntryVisitor::expected_forwardback_”的元素
+     1>C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\os_rendering_unittest.cc(797): error C2220: 警告被视为错误 - 没有生成“object”文件
+     1>C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\os_rendering_unittest.cc(797): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\os_rendering_unittest.cc(893): error C2001: 常量中有换行符
+     1>C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\os_rendering_unittest.cc(934): error C2001: 常量中有换行符
+     1>C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\os_rendering_unittest.cc(1392): fatal error C1075: 与左侧的 圆括号“(”(位于“C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\os_rendering_unittest.cc(934)”)匹配之前遇到文件结束
+     1>C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\v8_unittest.cc(909): error C2220: 警告被视为错误 - 没有生成“object”文件
+     1>C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\v8_unittest.cc(909): warning C4351: 新增行为:  默认情况下初始化数组“`anonymous-namespace'::V8RendererTest::RunObjectInterceptorTest::Interceptor::array_”的元素
+     1>已完成生成项目“C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\ceftests.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:05.77

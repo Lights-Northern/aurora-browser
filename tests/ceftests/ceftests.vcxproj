@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{C70102C9-8553-3DE3-AF8F-5B32391ECA98}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ceftests</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ceftests.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ceftests</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ceftests.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ceftests</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4244;4481;4512;4701;4702;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;CEF_USE_ATL;UNIT_TEST;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;CEF_USE_ATL;UNIT_TEST;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Adding manifest...																</Message>
+      <Command>setlocal
+mt.exe -nologo -manifest "C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/resources/win/ceftests.exe.manifest" "C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/resources/win/compatibility.manifest" -outputresource:"C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Debug/ceftests.exe";#1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Debug/chrome_elf.dll C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Debug/chrome_elf.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Debug/d3dcompiler_43.dll C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Debug/d3dcompiler_43.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Debug/d3dcompiler_47.dll C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Debug/d3dcompiler_47.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Debug/libcef.dll C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Debug/libcef.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Debug/libEGL.dll C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Debug/libEGL.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Debug/libGLESv2.dll C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Debug/libGLESv2.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Debug/natives_blob.bin C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Debug/natives_blob.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Debug/snapshot_blob.bin C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Debug/snapshot_blob.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_directory C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Debug/swiftshader C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Debug/swiftshader
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Resources/cef.pak C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Debug/cef.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Resources/cef_100_percent.pak C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Debug/cef_100_percent.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Resources/cef_200_percent.pak C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Debug/cef_200_percent.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Resources/cef_extensions.pak C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Debug/cef_extensions.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Resources/devtools_resources.pak C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Debug/devtools_resources.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Resources/icudtl.dat C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Debug/icudtl.dat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_directory C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Resources/locales C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Debug/locales
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\Debug\libcef.lib;..\..\libcef_dll_wrapper\Debug\libcef_dll_wrapper.lib;..\gtest\Debug\cef_gtest.lib;comctl32.lib;rpcrt4.lib;shlwapi.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Debug/ceftests.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Debug/ceftests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\resources\win\ceftests.exe.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4244;4481;4512;4701;4702;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;CEF_USE_ATL;_NDEBUG;UNIT_TEST;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;CEF_USE_ATL;_NDEBUG;UNIT_TEST;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Adding manifest...																</Message>
+      <Command>setlocal
+mt.exe -nologo -manifest "C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/resources/win/ceftests.exe.manifest" "C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/resources/win/compatibility.manifest" -outputresource:"C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Release/ceftests.exe";#1
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Release/chrome_elf.dll C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Release/chrome_elf.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Release/d3dcompiler_43.dll C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Release/d3dcompiler_43.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Release/d3dcompiler_47.dll C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Release/d3dcompiler_47.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Release/libcef.dll C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Release/libcef.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Release/libEGL.dll C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Release/libEGL.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Release/libGLESv2.dll C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Release/libGLESv2.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Release/natives_blob.bin C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Release/natives_blob.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Release/snapshot_blob.bin C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Release/snapshot_blob.bin
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_directory C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Release/swiftshader C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Release/swiftshader
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Resources/cef.pak C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Release/cef.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Resources/cef_100_percent.pak C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Release/cef_100_percent.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Resources/cef_200_percent.pak C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Release/cef_200_percent.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Resources/cef_extensions.pak C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Release/cef_extensions.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Resources/devtools_resources.pak C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Release/devtools_resources.pak
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Resources/icudtl.dat C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Release/icudtl.dat
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_directory C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Resources/locales C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Release/locales
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\Release\libcef.lib;..\..\libcef_dll_wrapper\Release\libcef_dll_wrapper.lib;..\gtest\Release\cef_gtest.lib;comctl32.lib;rpcrt4.lib;shlwapi.lib;ws2_32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Release/ceftests.lib</ImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ProgramDataBaseFile>C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/Release/ceftests.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\resources\win\ceftests.exe.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32 -BC:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32 --check-stamp-file C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/CMakeLists.txt;C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\CMakeLists.txt;C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32 -BC:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32 --check-stamp-file C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/ceftests/CMakeLists.txt;C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\CMakeLists.txt;C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\image_util.h" />
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\resource.h" />
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\routing_test_handler.h" />
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\test_handler.h" />
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\test_suite.h" />
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\test_util.h" />
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\thread_helper.h" />
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\extensions\extension_test_handler.h" />
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\browser\client_app_browser.h" />
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\browser\extension_util.h" />
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\browser\file_util.h" />
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\browser\geometry_util.h" />
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\browser\main_message_loop.h" />
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\browser\main_message_loop_external_pump.h" />
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\browser\main_message_loop_std.h" />
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\browser\resource_util.h" />
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\browser\util_win.h" />
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\common\client_app.h" />
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\common\client_app_other.h" />
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\common\client_switches.h" />
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\renderer\client_app_renderer.h" />
+    <ClInclude Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\views\test_window_delegate.h" />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\browser_info_map_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\client_app_delegates.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\command_line_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\cookie_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\dialog_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\display_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\dom_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\download_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\draggable_regions_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\file_util_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\frame_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\geolocation_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\image_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\image_util.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\jsdialog_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\life_span_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\message_router_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\navigation_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\os_rendering_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\osr_accessibility_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\osr_display_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\parser_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\plugin_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\preference_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\print_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\process_message_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\request_context_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\request_handler_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\request_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\resource_manager_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\routing_test_handler.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\run_all_unittests.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\scheme_handler_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\scoped_temp_dir_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\stream_resource_handler_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\stream_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\string_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\task_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\test_handler.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\test_suite.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\test_util.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\thread_helper.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\thread_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\tracing_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\translator_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\urlrequest_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\v8_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\values_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\version_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\waitable_event_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\webui_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\xml_reader_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\zip_reader_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\resource_util_win_idmap.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\extensions\background_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\extensions\chrome_alarms_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\extensions\chrome_storage_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\extensions\chrome_tabs_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\extensions\extension_test_handler.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\extensions\view_unittest.cc"  />
+    <ResourceCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\resources\win\ceftests.rc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\browser\client_app_browser.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\browser\extension_util.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\browser\file_util.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\browser\geometry_util.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\browser\main_message_loop.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\browser\main_message_loop_external_pump.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\browser\main_message_loop_std.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\browser\main_message_loop_external_pump_win.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\browser\resource_util_win.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\browser\util_win.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\common\client_app.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\common\client_app_other.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\common\client_switches.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\renderer\client_app_renderer.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\views\button_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\views\panel_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\views\scroll_view_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\views\test_window_delegate.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\views\textfield_unittest.cc"  />
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\views\window_unittest.cc"  />
+    <None Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\resources\win\ceftests.ico" />
+    <None Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\ceftests\resources\win\small.ico" />
+    <None Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\resources\osr_test.html" />
+    <None Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\resources\pdf.html" />
+    <None Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\resources\pdf.pdf" />
+    <Image Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\resources\window_icon.1x.png" />
+    <Image Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\shared\resources\window_icon.2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\ZERO_CHECK.vcxproj">
+      <Project>EACCAFFF-C576-326C-8D51-E332D3F30F3B</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\gtest\cef_gtest.vcxproj">
+      <Project>49549FA5-F634-3B20-AE00-EB481C8076D8</Project>
+      <Name>cef_gtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\libcef_dll_wrapper\libcef_dll_wrapper.vcxproj">
+      <Project>51A99B47-E800-37C9-93F3-355F63BB2B37</Project>
+      <Name>libcef_dll_wrapper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

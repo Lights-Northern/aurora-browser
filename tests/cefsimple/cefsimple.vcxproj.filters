@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ClientApp.cpp">
+      <Filter>othersimple</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientHandler.cpp">
+      <Filter>othersimple</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientV8ExtensionHandler.cpp">
+      <Filter>othersimple</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>othersimple</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClientApp.h">
+      <Filter>othersimple</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientHandler.h">
+      <Filter>othersimple</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientV8ExtensionHandler.h">
+      <Filter>othersimple</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\cefsimple\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="othersimple">
+      <UniqueIdentifier>{9e8d6499-7f2c-4f58-b8f5-79f71abfdf0c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

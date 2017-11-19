@@ -1,0 +1,172 @@
+﻿生成启动时间为 2017\12\19 星期二 20:04:50。
+     1>项目“C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\cefsimple\cefsimple.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32 /Zi /nologo /W4 /WX- /MP /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D __STDC_CONSTANT_MACROS /D __STDC_FORMAT_MACROS /D _WIN32 /D UNICODE /D _UNICODE /D WINVER=0x0601 /D _WIN32_WINNT=0x601 /D NOMINMAX /D WIN32_LEAN_AND_MEAN /D _HAS_EXCEPTIONS=0 /D CEF_USE_ATL /D "CMAKE_INTDIR=\"Debug\"" /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /GR- /Fo"cefsimple.dir\Debug\\" /Fd"cefsimple.dir\Debug\vc120.pdb" /Gd /TP /wd4100 /wd4127 /wd4244 /wd4481 /wd4512 /wd4701 /wd4702 /wd4996 /analyze- /errorReport:prompt ClientApp.cpp
+         ClientApp.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\cefsimple\Debug\cefsimple.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib ..\..\Debug\libcef.lib ..\..\libcef_dll_wrapper\Debug\libcef_dll_wrapper.lib comctl32.lib rpcrt4.lib shlwapi.lib ws2_32.lib /MANIFEST:NO /DEBUG /PDB:"C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/cefsimple/Debug/cefsimple.pdb" /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/cefsimple/Debug/cefsimple.lib" /MACHINE:X86 /SAFESEH   /machine:X86 cefsimple.dir\Debug\ClientApp.obj
+         cefsimple.dir\Debug\ClientHandler.obj
+         cefsimple.dir\Debug\ClientV8ExtensionHandler.obj
+         cefsimple.dir\Debug\main.obj
+         LINK : 没有找到 C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\cefsimple\Debug\cefsimple.exe 或上一个增量链接没有生成它；正在执行完全链接
+         cefsimple.vcxproj -> C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\cefsimple\Debug\cefsimple.exe
+       PostBuildEvent:
+         setlocal
+         mt.exe -nologo -manifest "C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/cefsimple/cefsimple.exe.manifest" "C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/cefsimple/compatibility.manifest" -outputresource:"C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/cefsimple/Debug/cefsimple.exe";#1
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         setlocal
+         "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Debug/chrome_elf.dll C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/cefsimple/Debug/chrome_elf.dll
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         setlocal
+         "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Debug/d3dcompiler_43.dll C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/cefsimple/Debug/d3dcompiler_43.dll
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         setlocal
+         "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Debug/d3dcompiler_47.dll C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/cefsimple/Debug/d3dcompiler_47.dll
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         setlocal
+         "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Debug/libcef.dll C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/cefsimple/Debug/libcef.dll
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         setlocal
+         "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Debug/libEGL.dll C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/cefsimple/Debug/libEGL.dll
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         setlocal
+         "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Debug/libGLESv2.dll C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/cefsimple/Debug/libGLESv2.dll
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         setlocal
+         "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Debug/natives_blob.bin C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/cefsimple/Debug/natives_blob.bin
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         setlocal
+         "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Debug/snapshot_blob.bin C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/cefsimple/Debug/snapshot_blob.bin
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         setlocal
+         "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_directory C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Debug/swiftshader C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/cefsimple/Debug/swiftshader
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         setlocal
+         "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Resources/cef.pak C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/cefsimple/Debug/cef.pak
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         setlocal
+         "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Resources/cef_100_percent.pak C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/cefsimple/Debug/cef_100_percent.pak
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         setlocal
+         "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Resources/cef_200_percent.pak C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/cefsimple/Debug/cef_200_percent.pak
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         setlocal
+         "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Resources/cef_extensions.pak C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/cefsimple/Debug/cef_extensions.pak
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         setlocal
+         "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Resources/devtools_resources.pak C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/cefsimple/Debug/devtools_resources.pak
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         setlocal
+         "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Resources/icudtl.dat C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/cefsimple/Debug/icudtl.dat
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         setlocal
+         "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_directory C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/Resources/locales C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/cefsimple/Debug/locales
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         :VCEnd
+     1>已完成生成项目“C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\cefsimple\cefsimple.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:24.37

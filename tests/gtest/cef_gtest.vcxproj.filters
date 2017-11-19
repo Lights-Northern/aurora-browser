@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\gtest\src\gtest-all.cc">
+      <Filter>cef_gtest</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\gtest\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="cef_gtest">
+      <UniqueIdentifier>{6D10795B-60EB-382A-A9AA-F583FE2BB32C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

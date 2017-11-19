@@ -1,0 +1,16 @@
+﻿生成启动时间为 2017\12\19 星期二 18:53:56。
+     1>项目“C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\gtest\cef_gtest.vcxproj”在节点 2 上(Build 个目标)。
+     1>CustomBuild:
+         Building Custom Rule C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/gtest/CMakeLists.txt
+         CMake does not need to re-run because C:/Users/Administrator/Desktop/cef_binary_3.3202.1686.gd665578_windows32/tests/gtest/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32 /IC:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\gtest\include /Zi /nologo /W4 /WX /MP /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D __STDC_CONSTANT_MACROS /D __STDC_FORMAT_MACROS /D _WIN32 /D UNICODE /D _UNICODE /D WINVER=0x0601 /D _WIN32_WINNT=0x601 /D NOMINMAX /D WIN32_LEAN_AND_MEAN /D _HAS_EXCEPTIONS=0 /D CEF_USE_ATL /D GTEST_HAS_POSIX_RE=0 /D GTEST_LANG_CXX11=1 /D UNIT_TEST /D "CMAKE_INTDIR=\"Debug\"" /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /GR- /Fo"cef_gtest.dir\Debug\\" /Fd"cef_gtest.dir\Debug\vc120.pdb" /Gd /TP /wd4100 /wd4127 /wd4244 /wd4481 /wd4512 /wd4701 /wd4702 /wd4996 /wd4800 /analyze- /errorReport:prompt "C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\gtest\src\gtest-all.cc"
+         gtest-all.cc
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\gtest\Debug\cef_gtest.lib" /NOLOGO   /machine:X86 "cef_gtest.dir\Debug\gtest-all.obj"
+         cef_gtest.vcxproj -> C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\gtest\Debug\cef_gtest.lib
+     1>已完成生成项目“C:\Users\Administrator\Desktop\cef_binary_3.3202.1686.gd665578_windows32\tests\gtest\cef_gtest.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:04.81
